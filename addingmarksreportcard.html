@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>Report Card Check</title>
+    <style>
+         #karmangrid
+        {
+            display:grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: auto auto auto;
+            
+            padding: 12px;
+            grid-gap: 25px;
+            
+        }
+    input[type=text], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+        box-sizing: border-box;}
+        input[type=button] {
+  width: 100%;
+  background-color:forestgreen;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:double;
+  border-radius: 4px;
+  cursor: pointer;
+}
+    </style>
+    <style>
+    h1
+        {
+            background-color:orange;
+            color:navy;
+        }
+        h1.c1
+        {
+            background-color:ghostwhite
+        }
+        h1#C1
+        {
+            background-color:limegreen;
+            
+        }
+        p
+        {
+            text-align: justify;
+        }
+    </style>
+    </head>
+    <body style="background-color:antiquewhite;">
+        
+        <h1><center><b>Computerized Report Card</b></center></h1>
+        <h1 class=c1><center><b>for</b></center></h1>
+        <h1 id=C1><center><b>Teacher's</b></center></h1>
+    <script language="javascript">
+    function check()
+        {
+            a=window.document.myform.cn.value;
+            b=window.document.myform.dn.value;
+            c=window.document.myform.en.value;
+            d=window.document.myform.fn.value;
+            e=window.document.myform.gn.value;
+            
+            h=window.document.myform.zn.value;
+            i=window.document.myform.yn.value;
+            j=window.document.myform.xn.value;
+            k=window.document.myform.wn.value;
+            l=window.document.myform.nnn.value;
+            
+           m=window.document.myform.value=parseFloat(h)+parseFloat(i)+parseFloat(j)+parseFloat(k)+parseFloat(l);
+        f=window.document.myform.hn.value=parseFloat(a)+parseFloat(b)+parseFloat(c)+parseFloat(d)+parseFloat(e);
+            g=window.document.myform.in.value=f*100/m;
+            
+        }
+    </script>
+
+    <body>
+        <div class="karmanitem">
+              <form name="myform">
+                    <label>Enter your Name - 
+                        <input type=text  name=an maxlength=20 size=15></label><br><br>
+                    <label>Enter your Rollno
+        <input type=text  name=bn maxlength=20 size=15></label><br><br>
+          <label>Marks of Physics-
+        <input type=text  name=cn maxlength=20 size=15></label>
+                    <label>Out of
+        <input type=text  name=zn maxlength=20 size=15></label><br><br>
+          <label>Marks of Maths--
+        <input type=text  name=dn maxlength=20 size=15></label>
+                    <label>Out of
+        <input type=text  name=yn maxlength=20 size=15></label><br><br>
+                    <label>Marks of Chem --
+        <input type=text  name=en maxlength=20 size=15></label>
+                    <label>Out of
+        <input type=text  name=xn maxlength=20 size=15></label><br><br>
+                    <label>Marks of Eng - -
+        <input type=text  name=fn maxlength=20 size=15></label>
+                    <label>Out of
+        <input type=text  name=wn maxlength=20 size=15></label><br><br>
+                    <label>Marks of IPrac -
+        <input type=text  name=gn maxlength=20 size=15></label>
+                    <label>Out of
+        <input type=text  name=nnn maxlength=20 size=15></label><br><br>
+                    <label>Total Marks
+        <input type=text  name=hn maxlength=20 size=15></label><br><br>
+                    <label>Percentage
+        <input type=text  name=in maxlength=20 size=15></label><br><br>
+                    
+                    <input type="button" value="Calculate" OnClick="check()">
+                  
+            </form> </div> </body></html></html>
